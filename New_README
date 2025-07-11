@@ -1,25 +1,3 @@
-# Datadog Mono Monitor module
-
-Terraform module to create Datadog team.
-
-## Usage
-
-### Create Datadog service monitors
-
-```hcl
-module "datadog_be_team" {
-  source = "c0x12c/team/datadog"
-
-  team_name        = "Prj X oncall team"
-  team_handle      = "prj-x-oncall"
-  team_description = "Prj X oncall team description"
-
-  team_members = local.team_members
-}
-```
-
-<!-- BEGIN_TF_DOCS -->
-
 ## Requirements
 
 | Name | Version |
@@ -60,5 +38,3 @@ No modules.
 |------|-------------|
 | <a name="output_team_id"></a> [team\_id](#output\_team\_id) | n/a |
 | <a name="output_team_members_ids"></a> [team\_members\_ids](#output\_team\_members\_ids) | n/a |
-
-<!-- END_TF_DOCS -->
